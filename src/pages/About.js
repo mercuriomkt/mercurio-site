@@ -39,6 +39,17 @@ export default () => {
           de um website e uma página do facebook, na qual são produzidos conteúdos
           relevantes para a marca e seus clientes.
         </Card>
+        <Card
+          link='https://oftalmoguara.com.br/'
+          title='Teste'
+          subtitle='Teste'
+          img={pic04}
+          links={oftalmoLinks}
+        >
+          Nosso trabalho com a clínica de oftalmologia Oftalmo Guará consistiu na criação
+          de um website e uma página do facebook, na qual são produzidos conteúdos
+          relevantes para a marca e seus clientes.
+        </Card>
       </SectionWrapper>
     </Wrapper>
   );
