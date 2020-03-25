@@ -27,20 +27,35 @@ export default () => {
     <form action='#'>
       <div className='fields'>
         <div className='field'>
-          <label>Nome</label>
-          <input type='text' onChange={e => setName(e.target.value)} value={name} />
+          <label htmlFor='name'>Nome</label>
+          <input
+            id='name'
+            type='text'
+            onChange={e => setName(e.target.value)}
+            value={name}
+          />
         </div>
       </div>
       <div className='fields'>
         <div className='field'>
-          <label>E-mail</label>
-          <input type='email' onChange={e => setEmail(e.target.value)} value={email} />
+          <label htmlFor='email'>E-mail</label>
+          <input
+            id='email'
+            type='email'
+            onChange={e => setEmail(e.target.value)}
+            value={email}
+          />
         </div>
       </div>
       <div className='fields'>
         <div className='field'>
-          <label>Sua mensagem</label>
-          <textarea rows='4' onChange={e => setMsg(e.target.value)} value={msg} />
+          <label htmlFor='msg'>Sua mensagem</label>
+          <textarea
+            id='msg'
+            rows='4'
+            onChange={e => setMsg(e.target.value)}
+            value={msg}
+          />
         </div>
       </div>
       <ul className='actions'>

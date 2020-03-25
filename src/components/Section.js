@@ -18,7 +18,7 @@ export default ({
   >
     <div className='inner'>
       <Link to='/' className='image'>
-        {img ? <img src={img} alt='img' /> : null}
+        {img ? <img src={img} alt='Link para home' /> : 'Retornar a home'}
       </Link>
       <div className='content'>
         <h2 className='major'>{title}</h2>
