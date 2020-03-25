@@ -5,6 +5,10 @@ import { Context } from '../App';
 
 export default () => {
   const toggleMenu = useContext(Context);
+  const _onClick = () => {
+    toggleMenu();
+    window.scrollTo(0, 0);
+  };
 
   return (
     <nav id='menu'>
@@ -12,20 +16,20 @@ export default () => {
         <h2>Menu</h2>
         <ul className='links'>
           <li>
-            <Link to='/' onClick={toggleMenu}>
+            <Link to='/' onClick={_onClick}>
               Home
             </Link>
           </li>
           <li>
-            <Link to='/sobre-nos' onClick={toggleMenu}>
+            <Link to='/sobre-nos' onClick={_onClick}>
               Sobre nós
             </Link>
           </li>
-          <li>
-            <a href='https://mercuriomkt.com/blog' onClick={toggleMenu}>
+          {/* <li>
+            <a href='https://mercuriomkt.com/blog' onClick={_onClick}>
               Blog
             </a>
-          </li>
+          </li> */}
         </ul>
         <button
           style={{ boxShadow: 'none', backgroundPosition: '50%' }}

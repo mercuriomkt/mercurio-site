@@ -4,9 +4,9 @@ import Wrapper from '../components/Wrapper';
 import Section from '../components/Section';
 import Features from '../components/Features';
 
-import pic01 from '../assets/img/pic01.jpg';
-import pic02 from '../assets/img/pic02.jpg';
-import pic03 from '../assets/img/pic03.jpg';
+import pic01 from '../assets/img/pic01.webp';
+import pic02 from '../assets/img/pic02.webp';
+import pic03 from '../assets/img/pic03.webp';
 
 export default () => (
   <Wrapper home>
